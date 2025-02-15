@@ -1,7 +1,9 @@
 'use client';
 
-import { Menu } from 'antd';
+import { Layout } from 'antd';
 import Link from 'next/link';
+
+const { Header: AntHeader } = Layout;
 
 const items = [
   {
@@ -19,11 +21,12 @@ const items = [
 ];
 
 const Header = () => {
-  return (
-    <header>
-      <Menu mode="horizontal" items={items} />
-    </header>
-  );
+  const headerStyle: React.CSSProperties = {
+    textAlign: 'center' as const,
+    // ... остальные стили
+  };
+
+  return <AntHeader style={headerStyle}>{/* содержимое хедера */}</AntHeader>;
 };
 
 export default Header;
