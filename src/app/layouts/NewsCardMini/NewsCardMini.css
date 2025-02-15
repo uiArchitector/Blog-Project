@@ -1,0 +1,23 @@
+.news-card-image {
+  width: 100%;
+  height: auto;
+}
+
+.news-card-category {
+  margin-top: 8px;
+}
+.news-card-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.news-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
